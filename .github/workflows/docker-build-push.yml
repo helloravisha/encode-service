@@ -28,9 +28,9 @@ jobs:
       # Step 4: Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t helloravisha/order-service:latest .
+          docker build -t helloravisha/encode-service:latest .
 
       # Step 5: Push the Docker image to Docker Hub
       - name: Push Docker image
         run: |
-          docker push helloravisha/order-service:latest
+          docker push helloravisha/encode-service:latest
