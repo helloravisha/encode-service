@@ -1,2 +1,2 @@
-# order-service
-Test Service for testing Github actions 
+# encode-service
+Encode Service for testing Github actions 
