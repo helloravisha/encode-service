@@ -8,7 +8,7 @@ WORKDIR /app
 COPY app.py /app/
 
 # Install Flask
-RUN pip install flask pyroscope
+RUN pip install flask pyroscope-io
 
 # Expose port 5000 to access the Flask app
 EXPOSE 5000
