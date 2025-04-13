@@ -5,6 +5,14 @@ from flask import Flask, request
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+import pyroscope
+
+# Initialize Pyroscope client
+pyroscope.configure(
+    app_name="encode-service",  # You can use a name for your service
+    server_url="http://pyroscope-server:4040"  # Make sure this points to your Pyroscope server
+)
+
 app = Flask(__name__)
 
 # Log request path before reaching any route handler
