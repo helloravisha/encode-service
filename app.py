@@ -7,12 +7,13 @@ logger = logging.getLogger(__name__)
 
 import pyroscope
 
+import pyroscope
+
 # Initialize Pyroscope client
 pyroscope.configure(
-    app_name="encode-service",  # You can use a name for your service
+  application_name = "encode-service", # replace this with some name for your application
+  server_address   = "http://a2074f890eaab46f7a87182611724d46-1127988196.us-east-2.elb.amazonaws.com", # replace this with the address of your Pyroscope server
 )
-pyroscope.set_server_url("http://a2074f890eaab46f7a87182611724d46-1127988196.us-east-2.elb.amazonaws.com")
-
 
 app = Flask(__name__)
 
