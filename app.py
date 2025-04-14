@@ -12,7 +12,7 @@ import pyroscope
 # Initialize Pyroscope client
 pyroscope.configure(
   application_name = "encode-service", # replace this with some name for your application
-  server_address   = "http://a2074f890eaab46f7a87182611724d46-1127988196.us-east-2.elb.amazonaws.com", # replace this with the address of your Pyroscope server
+  server_address   = "http://pyroscope-agent.observability.svc.cluster.local", # replace this with the address of your Pyroscope server
 )
 
 app = Flask(__name__)
