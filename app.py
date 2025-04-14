@@ -7,7 +7,8 @@ logger = logging.getLogger(__name__)
 
 import pyroscope
 
-import pyroscope
+import os
+os.environ["PYROSCOPE_LOG_LEVEL"] = "debug"
 
 # Initialize Pyroscope client
 pyroscope.configure(
