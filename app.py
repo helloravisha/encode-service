@@ -5,6 +5,9 @@ from flask import Flask, request
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+# Add this if not present:
+logging.getLogger("pyroscope").setLevel(logging.DEBUG)
+
 import pyroscope
 
 import os
