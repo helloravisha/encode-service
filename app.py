@@ -12,7 +12,7 @@ import pyroscope
 # Initialize Pyroscope client
 pyroscope.configure(
   application_name = "encode-service", # replace this with some name for your application
-  server_address   = "http://pyroscope-agent.observability.svc.cluster.local", # replace this with the address of your Pyroscope server
+  server_address   = "http://pyroscope-agen.observability.svc.cluster.local", # replace this with the address of your Pyroscope server
 )
 
 
